@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Tributo ao Corinthians - Time do Povo">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="src/icons/escudo-corinthians-g-copia.png" type="image/x-icon">
+    <title>Tributo - Corinthians</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
+
+    <style>
+        /* Global */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* MOBILE FIRST */
+
+        /* Header */
+        .header-desktop {
+            /* background-color: white; */
+            background-color: yellow;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            padding: 10px;
+            /* position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; */
+        }
+
+        .header-desktop img {
+            display: block;
+            margin: auto;
+            background-color: red;
+        }
+
+        .header-desktop h1 {
+            display: none;
+
+        }
+
+        .btn-menu {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+
+            position: relative;
+            top: 35px;
+            right: 15px;
+
+            width: 30px;
+            height: 20px;
+
+            z-index: 10;
+        }
+
+        .linha {
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: black;
+            border-radius: 15px;
+
+            transition: all 0.3s cubic-bezier(0.26, 0.56, 0.53, 0.88);
+        }
+
+        .btn-menu.ativo .linha:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .btn-menu.ativo .linha:nth-child(2) {
+            transform: translateX(100px);
+        }
+
+        .btn-menu.ativo .linha:nth-child(3) {
+            transform: rotate(-45deg) translate(2px, -2px);
+        }
+
+        .header-desktop nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+
+        }
+
+        .nav-desktop {
+            display: none;
+        }
+
+        .nav-desktop ul li {
+            margin-right: 12px;
+            /* display: none; */
+
+        }
+
+        .nav-desktop ul li {
+            position: relative;
+            left: 80px;
+            /* top: 20px; */
+        }
+
+        .nav-desktop a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main */
+        .main-section section {
+            padding: 20px;
+        }
+
+        .menu-options {
+            /* background-color: yellow; */
+            background-color: red;
+            padding: 20px;
+            flex-direction: row;
+
+
+        }
+
+        .menu-options ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .menu-options li {
+            margin-left: 15px;
+        }
+
+
+        .menu-options li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        section:nth-child(odd) {
+            background-color: black;
+            color: white;
+        }
+
+
+        @media (min-width: 850px) {
+            /* Header */
+
+            .btn-menu {
+                display: none;
+            }
+
+            .header-desktop h1 {
+                color: white;
+                font-size: 20px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                left: 5px;
+                background-color: red;
+
+            }
+
+            .nav-desktop {
+                background-color: red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .nav-desktop ul {
+                position: relative;
+                left: -72px;
+                list-style-type: none;
+            }
+
+            .header-desktop h1 {
+                display: flex;
+                text-align: center;
+
+            }
+
+            .header-desktop img {
+                display: block;
+                margin: auto;
+                background-color: red;
+            }
+
+            main section {
+                padding: 20px;
+            }
+
+            section:nth-child(odd) {
+                background-color: black;
+            }
+
+            .menu-options {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-desktop">
+        <h1>S. C. Corinthians Paulista</h1>
+        <img src="src/imgs/escudo-corinthians-g.png" alt="" srcset="" width="100" style="display: block;">
+        <button class="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+        <nav class="nav-desktop">
+            <ul>
+                <li>
+                    <a href="#historia" class="linkSection">Hist&#243;ria
+                    </a>
+                </li>
+                <li>
+                    <a href="#estadio" class="linkSection">Est&aacute;dio
+                    </a>
+                </li>
+                <li>
+                    <a href="#titulos" class="linkSection">T&iacute;tulos
+                    </a>
+                </li>
+                <li>
+                    <a href="#idolos" class="linkSection">&Iacute;dolos
+                    </a>
+                </li>
+                <li>
+                    <a href="#marcas" class="linkSection">Marcas
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-desktop">
+        <div class="menu-options">
+            <ul>
+                <li>
+                    <a href="#historia" class="linkSection">Hist&#243;ria
+                    </a>
+                </li>
+                <li>
+                    <a href="#estadio" class="linkSection">Est&aacute;dio
+                    </a>
+                </li>
+                <li>
+                    <a href="#titulos" class="linkSection">T&iacute;tulos
+                    </a>
+                </li>
+                <li>
+                    <a href="#idolos" class="linkSection">&Iacute;dolos
+                    </a>
+                </li>
+                <li>
+                    <a href="#marcas" class="linkSection">Marcas
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+        <section id="historia" class="linkSection">
+            <h2>
+                O Time do Povo: Fundação e Identidade
+            </h2>
+            <div class="historia-content">
+                <p>O Sport Club Corinthians Paulista nasceu da paixão de cinco operários, no dia 1º de setembro de 1910,
+                    no
+                    bairro do Bom
+                    Retiro, em São Paulo. Inspirados por uma equipe de futebol amadora inglesa que excursionava pelo
+                    Brasil,
+                    o Corinthian
+                    Football Club, eles decidiram fundar um clube que representasse a classe trabalhadora e o povo.
+                    Desde
+                    então, o
+                    Corinthians se consolidou não apenas como uma instituição esportiva, mas como um símbolo de luta,
+                    resistência e
+                    superação. Com suas cores alvinegras e o mascote Mosqueteiro, o clube representa a lealdade, a
+                    bravura e
+                    a união de uma
+                    nação de torcedores que, com a força de sua paixão, transformaram o "Time do Povo" em um dos maiores
+                    fenômenos do
+                    futebol mundial.</p>
+
+                <img src="src/imgs/foto-antiga-1.jpg" alt="" width="500">
+            </div>
+        </section>
+
+        <section id="estadio">
+            <h2>Estádio: O Santuário Alvinegro</h2>
+            <div class="content">
+                <p>
+                    A Neo Química Arena, a majestosa casa do Timão, é mais do que um estádio: é um santuário de sonhos e
+                    glórias para a Fiel
+                    Torcida. Inaugurada em 10 de maio de 2014, a arena foi palco da abertura da Copa do Mundo, mas sua
+                    verdadeira história é
+                    contada nos dias de jogos, quando se transforma em um caldeirão alvinegro. Com uma arquitetura
+                    imponente e moderna, a
+                    Neo Química Arena é o lar onde a história do clube é vivida em tempo real, onde cada grito da
+                    torcida ecoa e cada gol se
+                    torna uma página imortal na trajetória do Corinthians. Ela representa a nova era do clube, unindo a
+                    tradição de sua
+                    história com a grandiosidade de seu futuro.
+                </p>
+                <img src="src/imgs/estadio-neo-quimica.jpg" alt="" width="500px">
+            </div>
+        </section>
+
+        <section id="titulos">
+            <h2>Títulos: A Conquista de Glórias Eternas</h2>
+
+            <div class="content">
+                <p>A história do Corinthians é uma coleção de vitórias épicas e conquistas inesquecíveis. O clube
+                    ostenta o orgulho de ser
+                    o primeiro e único time brasileiro a conquistar o Mundial de Clubes da FIFA por duas vezes, em 2000
+                    e 2012, esta última
+                    após a tão sonhada e invicta conquista da Copa Libertadores da América. No cenário nacional, seus
+                    sete títulos do
+                    Campeonato Brasileiro da Série A e as três Copas do Brasil marcam a supremacia do Timão. Mas talvez
+                    o troféu mais
+                    emblemático seja o 30º Campeonato Paulista, em 1977, que quebrou um jejum de 23 anos e libertou uma
+                    geração inteira de
+                    torcedores que ansiava por um título. Cada taça é um capítulo de luta, perseverança e uma prova
+                    inquestionável da
+                    grandeza do Corinthians.</p>
+                <img src="src/imgs/elenco-corinthians.jpg" alt="" width="500">
+            </div>
+        </section>
+
+        <section id="idolos">
+            <h2>Os Heróis do Povo</h2>
+            <div class="content">
+                <p>Mais do que vitórias, a história do Corinthians é feita de ídolos, homens que vestiram o manto
+                    alvinegro e eternizaram
+                    seus nomes no coração da Fiel. O genial Doutor Sócrates, símbolo da Democracia Corinthiana; o mágico
+                    Rivellino, com sua
+                    canhota poderosa; o artilheiro Marcelinho Carioca, o "Pé de Anjo", que transformava faltas em gols;
+                    e o paredão Cássio,
+                    o goleiro com mais jogos pelo clube e o herói das maiores defesas da história. Zico e Ronaldo
+                    Fenômeno também deixaram
+                    suas marcas, mesmo que por um período menor, e a paixão de Luizinho, o "Pequeno Polegar", e a
+                    dedicação de Zé Maria e
+                    Wladimir, recordista de atuações, inspiram até hoje. Eles são a essência do clube, a personificação
+                    de sua alma guerreira.</p>
+                <img src="src/imgs/idolos-corinthians.jpg" alt="" width="500">
+            </div>
+        </section>
+
+        <section id="marcas">
+            <h2>Marcas Históricas: Momentos que Marcaram Gerações</h2>
+            <div class="content">
+                <p>A história do Corinthians é repleta de momentos que transcendem o futebol e se tornaram marcos
+                    sociais e
+                    culturais. A
+                    "Invasão Corinthiana" de 1976, quando mais de 70 mil torcedores transformaram o Maracanã em um mar
+                    preto
+                    e branco, foi
+                    uma demonstração de paixão e força sem precedentes. Nos anos 80, a "Democracia Corinthiana",
+                    liderada
+                    por Sócrates, foi
+                    um dos movimentos mais importantes do esporte mundial, onde jogadores e comissão técnica decidiam a
+                    gestão do clube em
+                    votações, defendendo a liberdade de expressão e a democracia em plena ditadura militar. O épico
+                    título
+                    de 1977, que
+                    quebrou o jejum e levou milhões de corações ao delírio, e a conquista invicta da Libertadores em
+                    2012,
+                    que coroou a
+                    hegemonia do clube, são exemplos de como o Corinthians não apenas joga futebol, mas escreve a
+                    própria
+                    história.</p>
+
+                <img src="src/imgs/mundial-corinthians.png" alt="" width="500">
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.linkSection')
+            links.forEach((link) => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault()
+
+                    const targetID = event.currentTarget.getAttribute('href')
+
+                    const targetElement = document.querySelector(targetID)
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+
+                        })
+                    }
+                })
+            })
+        })
+
+        const buttonMenu = document.querySelector('.btn-menu')
+        buttonMenu.addEventListener('click', () => {
+            buttonMenu.classList.toggle('ativo')
+        })
+    </script>
+
+    <footer>
+        Criado por <null class="footer-destaque">João Gabriel &copy;</null>
+    </footer>
+</body>
+
+</html>

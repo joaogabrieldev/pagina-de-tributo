@@ -11,206 +11,7 @@
     <link rel="stylesheet" href="/src/styles/style.css">
 
     <style>
-        /* Global */
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* MOBILE FIRST */
-
-        /* Header */
-        .header-desktop {
-            /* background-color: white; */
-            background-color: yellow;
-            color: white;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            width: 100%;
-            padding: 10px;
-            /* position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%; */
-        }
-
-        .header-desktop img {
-            display: block;
-            margin: auto;
-            background-color: red;
-        }
-
-        .header-desktop h1 {
-            display: none;
-
-        }
-
-        .btn-menu {
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-around;
-
-            position: relative;
-            top: 35px;
-            right: 15px;
-
-            width: 30px;
-            height: 20px;
-
-            z-index: 10;
-        }
-
-        .linha {
-            display: block;
-            width: 100%;
-            height: 4px;
-            background-color: black;
-            border-radius: 15px;
-
-            transition: all 0.3s cubic-bezier(0.26, 0.56, 0.53, 0.88);
-        }
-
-        .btn-menu.ativo .linha:nth-child(1) {
-            transform: rotate(45deg) translate(8px, 8px);
-        }
-
-        .btn-menu.ativo .linha:nth-child(2) {
-            transform: translateX(100px);
-        }
-
-        .btn-menu.ativo .linha:nth-child(3) {
-            transform: rotate(-45deg) translate(2px, -2px);
-        }
-
-        .header-desktop nav ul {
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
-
-        }
-
-        .nav-desktop {
-            display: none;
-        }
-
-        .nav-desktop ul li {
-            margin-right: 12px;
-            /* display: none; */
-
-        }
-
-        .nav-desktop ul li {
-            position: relative;
-            left: 80px;
-            /* top: 20px; */
-        }
-
-        .nav-desktop a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Main */
-        .main-section section {
-            padding: 20px;
-        }
-
-        .menu-options {
-            /* background-color: yellow; */
-            background-color: red;
-            padding: 20px;
-            flex-direction: row;
-
-
-        }
-
-        .menu-options ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .menu-options li {
-            margin-left: 15px;
-        }
-
-
-        .menu-options li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-
-        }
-
-        section:nth-child(odd) {
-            background-color: black;
-            color: white;
-        }
-
-        /* Tablet & Desktop */
-        @media (min-width: 850px) {
-            
-            /* Header */
-            .btn-menu {
-                display: none;
-            }
-
-            .header-desktop h1 {
-                color: white;
-                font-size: 20px;
-                position: relative;
-                display: flex;
-                align-items: center;
-                left: 5px;
-                background-color: red;
-
-            }
-
-            .nav-desktop {
-                background-color: red;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .nav-desktop ul {
-                position: relative;
-                left: -72px;
-                list-style-type: none;
-            }
-
-            .header-desktop h1 {
-                display: flex;
-                text-align: center;
-
-            }
-
-            .header-desktop img {
-                display: block;
-                margin: auto;
-                background-color: red;
-            }
-
-            main section {
-                padding: 20px;
-            }
-
-            section:nth-child(odd) {
-                background-color: black;
-            }
-
-            .menu-options {
-                display: none;
-            }
-        }
+        
     </style>
 </head>
 
@@ -226,23 +27,23 @@
         <nav class="nav-desktop">
             <ul>
                 <li>
-                    <a href="#historia" class="linkSection">Hist&#243;ria
+                    <a href="#historia" class="link-interno">Hist&#243;ria
                     </a>
                 </li>
                 <li>
-                    <a href="#estadio" class="linkSection">Est&aacute;dio
+                    <a href="#estadio" class="link-interno">Est&aacute;dio
                     </a>
                 </li>
                 <li>
-                    <a href="#titulos" class="linkSection">T&iacute;tulos
+                    <a href="#titulos" class="link-interno">T&iacute;tulos
                     </a>
                 </li>
                 <li>
-                    <a href="#idolos" class="linkSection">&Iacute;dolos
+                    <a href="#idolos" class="link-interno">&Iacute;dolos
                     </a>
                 </li>
                 <li>
-                    <a href="#marcas" class="linkSection">Marcas
+                    <a href="#marcas" class="link-interno">Marcas
                     </a>
                 </li>
             </ul>
@@ -250,25 +51,25 @@
     </header>
     <main class="main-desktop">
         <div class="menu-options">
-            <ul>
-                <li>
-                    <a href="#historia" class="linkSection">Hist&#243;ria
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#historia" class="link-interno">Hist&#243;ria
                     </a>
                 </li>
-                <li>
-                    <a href="#estadio" class="linkSection">Est&aacute;dio
+                <li class="list-item">
+                    <a href="#estadio" class="link-interno">Est&aacute;dio
                     </a>
                 </li>
-                <li>
-                    <a href="#titulos" class="linkSection">T&iacute;tulos
+                <li class="list-item">
+                    <a href="#titulos" class="link-interno">T&iacute;tulos
                     </a>
                 </li>
-                <li>
-                    <a href="#idolos" class="linkSection">&Iacute;dolos
+                <li class="list-item">
+                    <a href="#idolos" class="link-interno">&Iacute;dolos
                     </a>
                 </li>
-                <li>
-                    <a href="#marcas" class="linkSection">Marcas
+                <li class="list-item">
+                    <a href="#marcas" class="link-interno">Marcas
                     </a>
                 </li>
             </ul>
@@ -279,14 +80,18 @@
             <h2>
                 O Time do Povo: Fundação e Identidade
             </h2>
-            <div class="historia-content">
-                <p>O Sport Club Corinthians Paulista nasceu da paixão de cinco operários, no dia 1º de setembro de 1910,
+            <div class="content">
+                <p>O Sport Club Corinthians Paulista nasceu da paixão de cinco operários, no dia <strong>1º de setembro
+                        de 1910</strong>,
                     no
                     bairro do Bom
                     Retiro, em São Paulo. Inspirados por uma equipe de futebol amadora inglesa que excursionava pelo
-                    Brasil,
-                    o Corinthian
-                    Football Club, eles decidiram fundar um clube que representasse a classe trabalhadora e o povo.
+                    Brasil, o
+                    <strong>Corinthian
+                        Football Club</strong>, eles decidiram fundar um clube que representasse a <strong>
+                        classe trabalhadora e
+                        o povo.
+                    </strong>
                     Desde
                     então, o
                     Corinthians se consolidou não apenas como uma instituição esportiva, mas como um símbolo de luta,
@@ -296,7 +101,8 @@
                     a união de uma
                     nação de torcedores que, com a força de sua paixão, transformaram o "Time do Povo" em um dos maiores
                     fenômenos do
-                    futebol mundial.</p>
+                    futebol mundial.
+                </p>
 
                 <img src="src/imgs/foto-antiga-1.jpg" alt="" width="500">
             </div>
@@ -391,9 +197,10 @@
         </section>
     </main>
     <script>
+        const linksInteros = document.querySelectorAll('.link-interno')
+
         document.addEventListener('DOMContentLoaded', () => {
-            const links = document.querySelectorAll('.linkSection')
-            links.forEach((link) => {
+            linksInteros.forEach((link) => {
                 link.addEventListener("click", (event) => {
                     event.preventDefault()
 
@@ -412,10 +219,16 @@
             })
         })
 
+        const menu = document.querySelector('.menu-options')
         const buttonMenu = document.querySelector('.btn-menu')
         buttonMenu.addEventListener('click', () => {
             buttonMenu.classList.toggle('ativo')
+            menu.classList.toggle('menuAtivo')
+            
+            
         })
+
+
     </script>
 
     <footer>

@@ -26,13 +26,11 @@
   padding: 5px;
   z-index: 1000;
   position: relative;
- 
 }
 
 .header-desktop img {
   display: block;
   margin: auto;
-
 }
 
 .header-desktop h1 {
@@ -177,6 +175,27 @@ section:nth-child(odd) p {
   margin-top: 15px;
 }
 
+footer {
+  background-color: black;
+  /* color: black; */
+  color: white;
+  padding: 20px;
+  font-family: "Manrope";
+  text-align: center;
+}
+
+.footer-destaque {
+  font-weight: bold;
+  font-variant-ligatures: normal;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s cubic-bezier(0.21, 0.68, 0.51, 0.95);
+}
+
+.footer-destaque:hover {
+  color: goldenrod;
+}
+
 /* Tablet & Desktop */
 @media (min-width: 850px) {
   /* Header */
@@ -217,12 +236,10 @@ section:nth-child(odd) p {
   .nav-desktop li a {
     color: white;
     transition: color 0.25s cubic-bezier(0.21, 0.68, 0.51, 0.95);
-    
   }
 
   .nav-desktop li a:hover {
     color: goldenrod;
-    
   }
 
   .header-desktop h1 {

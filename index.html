@@ -11,26 +11,7 @@
     <link rel="stylesheet" href="/src/styles/style.css">
 
     <style>
-        footer {
-            background-color: black;
-            /* color: black; */
-            color: white;
-            padding: 20px;
-            font-family: "Manrope";
-            text-align: center;
-        }
-
-        .footer-destaque {
-            font-weight: bold;
-            font-variant-ligatures: normal;
-            color: white;
-            text-decoration: none;
-            transition: color 0.2s cubic-bezier(0.21, 0.68, 0.51, 0.95);;
-        }
-
-        .footer-destaque:hover {
-            color: goldenrod;
-        }
+        
     </style>
 </head>
 
@@ -215,41 +196,7 @@
             </div>
         </section>
     </main>
-    <script>
-        const linksInteros = document.querySelectorAll('.link-interno')
-
-        document.addEventListener('DOMContentLoaded', () => {
-            linksInteros.forEach((link) => {
-                link.addEventListener("click", (event) => {
-                    event.preventDefault()
-
-                    const targetID = event.currentTarget.getAttribute('href')
-
-                    const targetElement = document.querySelector(targetID)
-
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-
-                        })
-                    }
-                })
-            })
-        })
-
-        const menu = document.querySelector('.menu-options')
-        const buttonMenu = document.querySelector('.btn-menu')
-        buttonMenu.addEventListener('click', () => {
-            buttonMenu.classList.toggle('ativo')
-            menu.classList.toggle('menuAtivo')
-
-
-        })
-
-
-    </script>
-
+    <script src="./src/javascript/script.js"></script>
     <footer>
         Criado por João Gabriel &copy; | <a href="https://www.linkedin.com/in/joaogabrielrocha" target="_blank" class="footer-destaque" style="cursor: pointer;">Linkeadin</a> | <a href="https://github.com/joaogabrieldev" target="_blank" class="footer-destaque" style="cursor: pointer;">Github</a>
     </footer>

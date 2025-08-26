@@ -11,12 +11,31 @@
     <link rel="stylesheet" href="/src/styles/style.css">
 
     <style>
-        
+        footer {
+            background-color: black;
+            /* color: black; */
+            color: white;
+            padding: 20px;
+            font-family: "Manrope";
+            text-align: center;
+        }
+
+        .footer-destaque {
+            font-weight: bold;
+            font-variant-ligatures: normal;
+            color: white;
+            text-decoration: none;
+            transition: color 0.2s cubic-bezier(0.21, 0.68, 0.51, 0.95);;
+        }
+
+        .footer-destaque:hover {
+            color: goldenrod;
+        }
     </style>
 </head>
 
 <body>
-    <header class="header-desktop">
+    <header class="header-desktop" id="header">
         <h1>S. C. Corinthians Paulista</h1>
         <img src="src/imgs/escudo-corinthians-g.png" alt="" srcset="" width="100" style="display: block;">
         <button class="btn-menu">
@@ -74,8 +93,8 @@
                 </li>
             </ul>
 
-
         </div>
+
         <section id="historia" class="linkSection">
             <h2>
                 O Time do Povo: Fundação e Identidade
@@ -224,15 +243,15 @@
         buttonMenu.addEventListener('click', () => {
             buttonMenu.classList.toggle('ativo')
             menu.classList.toggle('menuAtivo')
-            
-            
+
+
         })
 
 
     </script>
 
     <footer>
-        Criado por <null class="footer-destaque">João Gabriel &copy;</null>
+        Criado por João Gabriel &copy; | <a href="https://www.linkedin.com/in/joaogabrielrocha" target="_blank" class="footer-destaque" style="cursor: pointer;">Linkeadin</a> | <a href="https://github.com/joaogabrieldev" target="_blank" class="footer-destaque" style="cursor: pointer;">Github</a>
     </footer>
 </body>
 
